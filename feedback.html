@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+     <title>Feedback | Online TVs Store</title> 
+      <link rel="stylesheet" href=".\css\styles.css"">
+      <script src=".\scripts\script.js"></script>
+  </head> 
+<body>
+  <header> 
+     <nav> <ul> <li><a href="index.html">Home</a></li>
+                <li><a href="tvs.html">TVs</a></li>
+                <li><a href="feedback.html">Feedback</a> </li> 
+     </ul> </nav>
+ </header>
+   <h1>Feedback Form</h1>
+   <div>
+       <section>
+         <form name="feedbackForm" onsubmit="return validateForm()">
+            <div>
+                <label>Name:</label>
+                <div class="error" id="nameError">
+                </div>
+                <input type="text" name="name" placeholder="Enter your name...">
+                
+            </div>
+            <div>
+                <label>Phone Number:</label>
+                <div class="error" id="phoneError">
+                </div>
+                <input type="text" name="phone" placeholder="Enter your phone number">
+            </div>
+            <div>
+                <label>Email:</label>
+                <div class="error" id="emailError">
+                </div>
+                <input type="email" name="email" placeholder="Enter your email"> 
+            </div>
+            <div>
+               <label>Subject:</label>
+               <div class="error" id="subjectError">
+               </div> 
+               <input type="text" name="subject" placeholder="Enter the subject">
+            </div> 
+           <div>
+               <label>Topic:</label> 
+               <div class="error" id="topicError">
+               </div>
+               <select name="topic" id="topic">
+                  <option value="">Please select</option> 
+                  <option value="Suggestion">Suggestion</option> 
+                  <option value="Complaint">Complaint</option> 
+                  <option value="Idea">Idea</option>
+                  <option value="Help">Help</option> 
+               </select>
+           </div> 
+           <div>
+                <label>Message:</label>
+                <div class="error" id="messageError">
+                </div>
+                <textarea name="message" placeholder="Enter the meassage..." rows="10" cols="50"></textarea>
+          </div>
+            <button type="submit">Submit</button>
+       </form>
+     </section>
+      <footer>&copy Anas muhammed roshdi talika 443011908 | Ahmed muhammed roshdi talika 442016691.</footer>
+</body>
+
+</html>
